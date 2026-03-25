@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex-Students Registration</title>
+  <link rel="stylesheet" href="expols.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Police Secondary Schools Ex-pols Form</h2>
+
+  <form id="myForm">
+
+    <!-- Name -->
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" id="name">
+      <small class="error"></small>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="email">
+      <small class="error"></small>
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="tel" id="phone">
+      <small class="error"></small>
+    </div>
+
+    <!-- Year of Enrollment -->
+    <div class="form-group">
+      <label>Year of Enrollment</label>
+      <input type="number" id="enrollment">
+      <small class="error"></small>
+    </div>
+
+    <!-- Graduation Year -->
+    <div class="form-group">
+      <label>Graduation Year</label>
+      <input type="number" id="year">
+      <small class="error"></small>
+    </div>
+
+    <!-- Commandant -->
+    <div class="form-group">
+      <label>Name of Commandant</label>
+      <input type="text" id="commandant">
+    </div>
+
+    <!-- Hostel -->
+    <div class="form-group">
+      <label>Name of Hostel</label>
+      <input type="text" id="hostel">
+    </div>
+
+    <!-- PSS Category -->
+    <div class="form-group">
+      <label>PSS Category</label>
+      <div>
+        <input type="radio" name="pssType" value="State"> State
+        <input type="radio" name="pssType" value="Location"> Location
+      </div>
+      <small class="error"></small>
+    </div>
+
+    <!-- School Dropdown -->
+    <div class="form-group">
+      <label>Police Secondary School Attended</label>
+      <select id="school">
+        <option value="">Select School</option>
+
+        <option>Abia - Police Secondary School, Obeaku-Ndoki</option>
+        <option>Abuja - Police Day Secondary School, Dei-Dei</option>
+        <option>Abuja - Police Day Secondary School, Area 11</option>
+        <option>Akwa Ibom - Police Secondary School, Ukana</option>
+        <option>Cross River - Police Secondary School, Calabar</option>
+        <option>Gombe - Police Secondary School, Kumo</option>
+        <option>Imo - Police Secondary School, Isu-Nwangele</option>
+        <option>Kaduna - Police Secondary School, Karau-Karau</option>
+        <option>Kaduna - Police Secondary School, Tum-Kagoro</option>
+        <option>Kano - Police Girls' Secondary School, Shanono</option>
+        <option>Kano - Police Secondary School, Dawakin-Kudu</option>
+        <option>Katsina - Police Boys' Secondary School, Mani</option>
+        <option>Katsina - Police Basic Secondary School, Daura</option>
+        <option>Kwara - Police Secondary School, Ballah</option>
+        <option>Kwara - Police Day Secondary School, Ilorin</option>
+        <option>Lafia - Police Secondary School, Lafia</option>
+        <option>Niger - Police Secondary School, Minna</option>
+        <option>Niger - Police Boys' Secondary School, Bida</option>
+        <option>Niger - Police Secondary School, Nami-Agaie</option>
+        <option>Ogun - Police Secondary School, Erinja</option>
+        <option>Ogun - Police Secondary School, Sagamu</option>
+        <option>Ondo - Police Secondary School, Akure</option>
+        <option>Ondo - Police Secondary School, Isua-Akoko</option>
+        <option>Oyo - Police Secondary School, Igboora</option>
+        <option>Plateau - Police Secondary School, Bashar</option>
+        <option>Rivers - Police Comprehensive Secondary School</option>
+        <option>Yobe - Police Secondary School, Damaturu</option>
+        <option>Zamfara - Police Secondary School, Gusau</option>
+
+      </select>
+      <small class="error"></small>
+    </div>
+
+    <!-- Address -->
+    <div class="form-group">
+      <label>Address</label>
+      <textarea id="address"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+
+    <p id="successMessage"></p>
+
+  </form>
+</div>
+
+<script src="validator.js"></script>
+</body>
+</html>
